@@ -1,0 +1,10 @@
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+}
