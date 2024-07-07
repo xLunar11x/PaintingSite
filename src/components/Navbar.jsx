@@ -4,9 +4,11 @@ import './navbar.css'
 
 const Navbar = () => {
 
+  //  const logo = new URL(`../assets/IMG_9933.jpg`, import.meta.url).href
+
     return (
         <div id="navbar">
-            <h1>Esteban Painting</h1>
+            <h1>A & S Painting</h1>
             <div id="links">
                 <div>
                     <Link to="">Home</Link>
