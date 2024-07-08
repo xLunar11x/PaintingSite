@@ -2,9 +2,33 @@
 #navbar {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
+
+#logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.image-container {
+    background-color: black;
+    width: 100%;
+}
+
+.navbar-links {
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+    text-decoration: inherit;
+  }
+  .navbar-links:hover {
+    color: white;
+    text-decoration: underline;
+  }
