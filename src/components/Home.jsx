@@ -29,8 +29,15 @@ const Home = () => {
             <div>
                 <h2>Our Services</h2>
                 <ul>
-                    <li><strong>Interior Painting:</strong> Refresh your living spaces with our meticulous interior painting services.</li>
-                    <li><strong>Exterior Painting:</strong> Enhance your home's curb appeal with a fresh exterior paint job.</li>
+                    <div>
+                        <strong>Interior Painting:</strong> Refresh your living spaces with our meticulous interior painting services.
+                    </div>
+                    <div>
+                        <strong>Exterior Painting:</strong> Enhance your home's curb appeal with a fresh exterior paint job.
+                    </div>
+                    <div>
+                        <strong>Drywall Repair</strong> Professional drywall repair services for residential and commercial properties.
+                    </div>
                 </ul>
             </div>
             <div id="contact-info">
