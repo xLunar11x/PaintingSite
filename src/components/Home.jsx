@@ -4,7 +4,9 @@ import './home.css'
 const Home = () => {
 
     const form = useRef();
-
+    const InteriorHome = new URL(`../assets/InteriorHome.jpg`, import.meta.url).href
+    const ExteriorHome = new URL(`../assets/ExteriorHome.jpg`, import.meta.url).href
+    
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -30,12 +32,16 @@ const Home = () => {
                 <h2>Our Services</h2>
                 <ul>
                     <div>
+
+                    <img className="serviceimages" src={InteriorHome}></img>
                         <strong>Interior Painting:</strong> Refresh your living spaces with our meticulous interior painting services.
                     </div>
                     <div>
+                    <img className="serviceimages" src={ExteriorHome}></img>
                         <strong>Exterior Painting:</strong> Enhance your home's curb appeal with a fresh exterior paint job.
                     </div>
                     <div>
+                    <img className="serviceimages" src={ExteriorHome}></img>
                         <strong>Drywall Repair</strong> Professional drywall repair services for residential and commercial properties.
                     </div>
                 </ul>
