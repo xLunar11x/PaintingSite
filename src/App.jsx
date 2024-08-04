@@ -9,10 +9,6 @@ function App() {
 
   return (
     <div className="App">
-      <div id='top-container'>
-        <div>Free Estimates</div>
-        <div>Call Now! <a id="telephone" href="tel:2244690328">(224)469-0328</a></div>
-      </div>
       <Navbar id="navbar"/>
       <div>
         <Routes>

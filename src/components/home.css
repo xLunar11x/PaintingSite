@@ -15,9 +15,29 @@
     justify-content: space-around;
 }
 
+.serviceimages {
+    width: 300px;
+    height: 200px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services {
+    display: flex;
+    padding: 5px;
+}
+
 @media (max-width: 480px) {
     #contact-info {
         display: flex;
+        flex-direction: column;
+    }
+
+    .services {
         flex-direction: column;
     }
 }
