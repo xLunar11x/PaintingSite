@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import DryWall from '../assets/IMG_9998.jpg';
 import './home.css'
 
 const Home = () => {
@@ -6,8 +7,7 @@ const Home = () => {
     const form = useRef();
     const InteriorHome = new URL(`../assets/InteriorHome.jpg`, import.meta.url).href
     const ExteriorHome = new URL(`../assets/ExteriorHome.jpg`, import.meta.url).href
-    const DryWall = new URL(`../assets/IMG_9998.JPG`, import.meta.url).href
-    
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -22,10 +22,10 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className="home-page">
             <div>
                 <h2>About Us</h2>
-                <p>At Professional Home Painters, we specialize in providing top-quality residential painting services. Our team of experienced and
+                <p>At A&S Painting, we specialize in providing top-quality residential painting services. Our team of experienced and
                     skilled painters is dedicated to delivering exceptional results, ensuring your home looks beautiful and inviting. We use high-quality
                     paints and materials to guarantee a long-lasting finish that you'll love.</p>
             </div>
@@ -34,18 +34,33 @@ const Home = () => {
                 <ul className="services">
                     <div className="service">
 
-                    <img className="serviceimages" src={InteriorHome}></img>
+                        <img className="serviceimages" src={InteriorHome}></img>
                         <strong>Interior Painting</strong> Refresh your living spaces with our meticulous interior painting services.
                     </div>
                     <div className="service">
-                    <img className="serviceimages" src={ExteriorHome}></img>
+                        <img className="serviceimages" src={ExteriorHome}></img>
                         <strong>Exterior Painting</strong> Enhance your home's curb appeal with a fresh exterior paint job.
                     </div>
                     <div className="service">
-                    <img className="serviceimages" src={DryWall}></img>
+                        <img className="serviceimages" src={DryWall}></img>
                         <strong>Drywall Repair</strong> Professional drywall repair services for residential and commercial properties.
                     </div>
                 </ul>
+            </div>
+            <div id="choice">
+                <h2>Why Choose Us?</h2>
+                <p>
+                    <strong>Experienced Professionals:</strong> Our painters are trained and experienced, ensuring high-quality workmanship.
+                </p>
+                <p>
+                    <strong>Quality Materials:</strong> We use premium paints and materials for a durable and stunning finish.
+                </p>
+                <p>
+                    <strong>Customer Satisfaction:</strong> We prioritize your satisfaction and work hard to exceed your expectations.
+                </p>
+                <p>
+                    <strong>Competitive Pricing:</strong> Get top-notch painting services at affordable rates.
+                </p>
             </div>
             <div id="contact-info">
                 <div>
@@ -66,15 +81,6 @@ const Home = () => {
                     </p>
                     <p><strong>Email: </strong>BahenaEsteban57@gmail.com</p>
                 </div>
-            </div>
-            <div id="choice">
-                <h2>Why Choose Us?</h2>
-                <ul>
-                    <li><strong>Experienced Professionals:</strong> Our painters are trained and experienced, ensuring high-quality workmanship.</li>
-                    <li><strong>Quality Materials:</strong> We use premium paints and materials for a durable and stunning finish.</li>
-                    <li><strong>Customer Satisfaction:</strong> We prioritize your satisfaction and work hard to exceed your expectations.</li>
-                    <li><strong>Competitive Pricing:</strong> Get top-notch painting services at affordable rates.</li>
-                </ul>
             </div>
 
         </div>

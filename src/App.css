@@ -25,4 +25,7 @@
   #root {
     padding: 0px;
   }
+  .App {
+    max-width: 480px;
+  }
 }

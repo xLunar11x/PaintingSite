@@ -2,7 +2,6 @@
     overflow: hidden;
     padding-bottom: 30%;
     position: relative;
-    height: 0;
 }
 
 .map-responsive iframe {
@@ -26,9 +25,40 @@ form {
   input {
     margin: 3px;
     font-size: 20px;
+    font-family: 'Montserrat';
   }
 
   textarea {
     font-size: 20px;
     margin: 3px;
+    font-family: 'Montserrat';
   }
+
+textarea {
+  font-style: sans-serif;
+}
+
+#contact-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#description {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.contact-info {
+  background-color: white;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  #contact-page {
+    flex-direction: column;
+  }
+}
